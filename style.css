@@ -476,3 +476,28 @@ h5 {
   justify-content: space-between;
   align-items: center;
 }
+
+.footer p {
+  color: #7f8c8d;
+  justify-content: flex-start;
+}
+
+.footer p i {
+  color: #ff0000;
+  padding-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #ff5733 14%, #171819 64%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
