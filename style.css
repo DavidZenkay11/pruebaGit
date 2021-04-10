@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;3&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 6.5rem;
+  background-color: #222;
+  z-index: 1000;
+}
+
+.nav h2 {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+#item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#item li {
+  list-style: none;
+  padding-right: 50px;
+}
+
+#item li a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#item li a:hover {
+  color: #ff5733;
+}
+
+#item .icon i {
+  color: #fff;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+
+.fa-facebook-square:hover {
+  color: #4267b2 !important;
+}
+
+.fa-twitter:hover {
+  color: #00acee !important;
+}
+
+.fa-youtube-play:hover {
+  color: #c4302b !important;
+}
+
+.background {
+  background: url("./img/background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  z-index: -1;
+}
+
+.overlay {
+  background: #171819;
+  width: 100%;
+  height: 100%;
+  opacity: 45%;
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mid p {
+  color: #7f8c8d;
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+.mid h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.mid .button {
+  margin-top: 2rem;
+}
+.mid .button a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mid .button a.simple {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.9rem 1.6rem;
+}
+
+.mid .button a.simple:hover {
+  color: #ff5733;
+}
+
+.mid .button a.border {
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  font-weight: 500;
+  padding: 0.9rem 1.6rem;
+  border-radius: 3px;
+}
+.mid .button a.border:hover {
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 15rem;
+  background-color: #171819;
+}
+.details h6,
+h3,
+h5 {
+  color: #fff;
+}
+
+.details .one {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details .one h3 {
+  font-size: 2.3rem;
+  padding-bottom: 1.1rem;
+}
+.details .one h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+.details .one p {
+  color: #666262;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.details .one a {
+  color: #fff;
+  background: #f13a11;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details .one a:hover {
+  background: #fff;
+  color: #f13a11;
+}
+
+.details .two {
+  width: 45%;
+  border-left: 1px solid #666262;
+  padding-left: 4rem;
+}
+
+.details .two h3 {
+  font-size: 2.3rem;
+  padding-bottom: 1.1rem;
+}
+
+.details .two h5 {
+  font-size: 1.1rem;
+}
+
+.details .two p {
+  font-size: 1.1rem;
+  color: #666262;
+  padding-bottom: 0.8rem;
+}
+
+.trainer {
+  background-color: #f9f9f9;
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .about {
+  width: 39%;
+}
+
+.trainer .about h2 {
+  color: #212529;
+  font-size: 2.1rem;
+  padding-bottom: 1.8rem;
+}
+
+.trainer .about p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.trainer .people {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .people .staff {
+  width: 45%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.trainer .people .staff .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.trainer .people .staff .name,
+.trainer .people .staff .profession {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .people .staff .name {
+  padding: 5px 20px 0px 20px;
+}
+
+.trainer .people .staff .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.trainer .people .staff .name h4 {
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+.trainer .people .staff .name i,
+.trainer .people .staff .profession i {
+  font-size: 1, 3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #212529;
+}
+
+.trainer .people .staff .profession {
+  padding: 0px 20px 5px 20px;
+}
+
+.trainer .people .staff .profession P {
+  color: #212529;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 8rem;
+}
+
+.class .parrafo {
+  font-size: 1.3rem;
+  color: #95a5a6;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.class .h2 {
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.class .classMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.class .classMenu .staff {
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.class .classMenu .staff .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.class .classMenu .staff .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.class .classMenu .staff .teamDetails .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px 0px 30px;
+}
+
+.class .classMenu .staff .teamDetails .name .nameDetails h4 {
+  color: #212529;
+  font-size: 1.7rem;
+}
+
+.class .classMenu .staff .teamDetails .name p {
+  color: #212529;
+  font-size: 1.1rem;
+}
+
+.class .classMenu .staff .teamDetails .name p span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.class .classMenu .staff .teamDetails .name .precio h5 {
+  font-size: 1rem;
+  background: #f13a11;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.class .classMenu .staff .teamDetails .profession {
+  padding: 15px 30px 30px 30px;
+}
+
+.class .classMenu .staff .teamDetails .profession p {
+  font-size: 1rem;
+  color: #666262;
+}
+
+.contacto {
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacto .form {
+  width: 45%;
+}
+
+.contacto .form h2 {
+  font-size: 2rem;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.contacto .form .enviar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contacto .form .enviar input,
+.contacto .form .enviar textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #95a5a6;
+  outline: none;
+  margin: 13px 0;
+}
+
+.contacto .form .enviar input:focus,
+.contacto .form .enviar textarea:focus {
+  border: 1px solid #111;
+}
+
+.contacto .form .enviar input::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.contacto .form .enviar input::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  height: 80%;
+}
+
+.contacto .form .enviar a {
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 13px 0;
+}
+
+.contacto .map {
+  width: 45%;
+}
+
+.contacto .map h2 {
+  font-size: 2rem;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.contacto .map p {
+  font-size: 1.1rem;
+  color: #212529;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.contacto .map p i {
+  color: #ff0000;
+  padding-right: 4px;
+}
+
+.contacto .map iframe {
+  width: 100%;
+}
+
+.footer {
+  border-top: 1px solid #ecf0f1;
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
